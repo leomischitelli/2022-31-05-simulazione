@@ -89,7 +89,7 @@ public class Simulator {
 		
 		switch(type) {
 		case INIZIO_HS:
-			this.revisionati.set(tecnico, this.revisionati.get(tecnico)+1);
+			this.revisionati.set(tecnico, this.revisionati.get(tecnico)+1); //tecnico = indice
 			
 			if(Math.random()<0.1) {
 				queue.add(new Event(time+25, EventType.FINE_HS, tecnico)) ;
